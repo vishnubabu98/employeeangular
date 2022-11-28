@@ -11,40 +11,40 @@
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form label" style="
                     color: #df7186;">Employee Name</label>
-                    <input type="text" class="form-control">
+                    <input name="name"[(ngModel)]="name" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="form label" style="
                     color: #df7186;">Designation</label>
-                    <input type="text" class="form-control">
+                    <input name="designation"[(ngModel)]="designation" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form label" style="
                     color: #df7186;">Salary</label>
-                    <input type="text" class="form-control">
+                    <input name="salary"[(ngModel)]="salary" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form label" style="
-                    color: #df7186;">Phone no</label>
-                    <input type="text" class="form-control">
+                    color: #df7186;">Company</label>
+                    <input name="company"[(ngModel)]="company" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form label" style="
                     color: #df7186;">E-mail</label>
-                    <input type="text" class="form-control">
+                    <input name="email"[(ngModel)]="email" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form label" style="
                     color: #df7186;">Company Website</label>
-                    <input type="text" class="form-control">
+                    <input name="comweb"[(ngModel)]="comweb" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="form label" style="
                     color: #df7186;">Year of Experience</label>
-                    <input type="text" class="form-control">
+                    <input name="yop"[(ngModel)]="yop" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button class="btn btn-primary">Submit</button>
+                    <button (click)="readValues()"  class="btn btn-primary">Submit</button>
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <a href=""class="btn btn-primary">logout</a>
